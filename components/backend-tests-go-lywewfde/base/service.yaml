@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: backend-tests-go-lywewfde
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: backend-tests-go-lywewfde 
+  name: backend-tests-go-lywewfde
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: backend-tests-go-lywewfde 
